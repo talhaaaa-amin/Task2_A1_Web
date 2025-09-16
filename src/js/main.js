@@ -1,10 +1,24 @@
 // Import our custom CSS
 import "../scss/styles.scss";
 
-// Import only the Bootstrap components we need
-import { Popover } from "bootstrap";
+// Import Bootstrap components we need
+import { Popover, Carousel, Dropdown } from "bootstrap";
 
-// Create an example popover
+// Initialize carousel
+const carousel = document.querySelector("#amazonCarousel");
+if (carousel) {
+  new Carousel(carousel, {
+    interval: 5000,
+    ride: "carousel",
+  });
+}
+
+// Initialize popovers
 document.querySelectorAll('[data-bs-toggle="popover"]').forEach((popover) => {
   new Popover(popover);
+});
+
+// Initialize dropdowns
+document.querySelectorAll(".dropdown-toggle").forEach((dropdown) => {
+  new Dropdown(dropdown);
 });
