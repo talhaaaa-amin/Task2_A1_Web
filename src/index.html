@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon.com: Online Shopping</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom SCSS (compiled) -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.amazon.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand py-1" href="#">
+          <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon" height="30">
+        </a>
+
+        <!-- Deliver To Section -->
+        <div class="d-none d-lg-flex text-white">
+          <div class="me-1">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <div class="small text-muted">Deliver to</div>
+            <div class="fw-bold">Pakistan</div>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="d-flex flex-grow-1 mx-lg-3 my-1">
+          <div class="input-group">
+            <button class="btn btn-light dropdown-toggle rounded-start" type="button"
+              data-bs-toggle="dropdown">All</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All Departments</a></li>
+              <li><a class="dropdown-item" href="#">Arts & Crafts</a></li>
+              <li><a class="dropdown-item" href="#">Automotive</a></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+            </ul>
+            <input type="text" class="form-control" placeholder="Search Amazon">
+            <button class="btn btn-warning" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hamburger menu for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <!-- Language Selector -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png"
+                  alt="US" height="15"> EN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+              </ul>
+            </li>
+
+            <!-- Account -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                <div class="small">Hello, Sign in</div>
+                <div class="fw-bold">Account & Lists</div>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <h6 class="dropdown-header">Your Account</h6>
+                </li>
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li><a class="dropdown-item" href="#">Create Account</a></li>
+                <li><a class="dropdown-item" href="#">Your Orders</a></li>
+                <li><a class="dropdown-item" href="#">Your Lists</a></li>
+              </ul>
+            </li>
+
+            <!-- Returns & Orders -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="small">Returns</div>
+                <div class="fw-bold">& Orders</div>
+              </a>
+            </li>
+
+            <!-- Cart -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge bg-warning rounded-pill">0</span>
+                Cart
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Secondary Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-subtle py-0">
+      <div class="container-fluid">
+        <!-- All menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu">
+          <i class="fas fa-bars"></i> All
+        </button>
+
+        <!-- Side Menu Offcanvas -->
+        <div class="offcanvas offcanvas-start" id="sideMenu" tabindex="-1">
+          <div class="offcanvas-header bg-dark text-white">
+            <h5 class="offcanvas-title">Hello, Sign In</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item fw-bold">Shop By Department</li>
+              <li class="list-group-item">Electronics</li>
+              <li class="list-group-item">Computers</li>
+              <li class="list-group-item">Smart Home</li>
+              <li class="list-group-item">Arts & Crafts</li>
+              <li class="list-group-item fw-bold">Programs & Features</li>
+              <li class="list-group-item">Gift Cards</li>
+              <li class="list-group-item">Amazon Live</li>
+              <li class="list-group-item">International Shopping</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Secondary Nav Items -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#"><i class="fas fa-bars me-1"></i> All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Today's Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Customer Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Registry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Sell</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Special Deal -->
+        <div class="d-none d-lg-block">
+          <a href="#" class="text-decoration-none fw-bold text-dark">Shop deals in Electronics</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg" class="d-block w-100"
+            alt="Amazon Sale">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Amazon</h5>
+            <p>Discover amazing deals</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg" class="d-block w-100" alt="Prime Day">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Prime Day Deals</h5>
+            <p>Exclusive for Prime members</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/71U-Q+N7PXL._SX3000_.jpg" class="d-block w-100"
+            alt="Electronics">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Electronics Sale</h5>
+            <p>Latest gadgets at best prices</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Product Category Cards -->
+    <div class="container-fluid mt-n5 position-relative">
+      <div class="row g-3">
+        <!-- Category Card 1 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Electronics</h5>
+            </div>
+            <div class="card-body">
+              <div class="row g-2">
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_TV_2X._SY304_CB432517900_.jpg"
+                    class="img-fluid rounded" alt="Electronics">
+                  <p class="small mt-1">Television</p>
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg"
+                    class="img-fluid rounded" alt="Electronics">
+                  <p class="small mt-1">Smart Watches</p>
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg"
+                    class="img-fluid rounded" alt="Electronics">
+                  <p class="small mt-1">Laptops</p>
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg"
+                    class="img-fluid rounded" alt="Electronics">
+                  <p class="small mt-1">Computers</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">Shop all electronics</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Home & Kitchen</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/SpringEvent2023/XCM_CUTTLE_1559454_3018199_379x304_1X_en_US._SY304_CB592739737_.jpg"
+                class="img-fluid rounded" alt="Home & Kitchen">
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">See more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Fashion</h5>
+            </div>
+            <div class="card-body">
+              <div class="row g-2">
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/CAT/1X/CAT_M_SHOES_1x._SY304_CB627420051_.jpg"
+                    class="img-fluid rounded" alt="Men's Fashion">
+                  <p class="small mt-1">Men's Shoes</p>
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/CAT/1X/CAT_W_SHOES_1x._SY304_CB627420051_.jpg"
+                    class="img-fluid rounded" alt="Women's Fashion">
+                  <p class="small mt-1">Women's Shoes</p>
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/CAT/1X/CAT_W_DRESSES_1x._SY304_CB627420051_.jpg"
+                    class="img-fluid rounded" alt="Women's Dresses">
+                  <p class="small mt-1">Dresses</p>
+                </div>
+                <div class="col-6">
+                  <img
+                    src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/CAT/1X/CAT_J_1x._SY304_CB627420051_.jpg"
+                    class="img-fluid rounded" alt="Jewelry">
+                  <p class="small mt-1">Jewelry</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">Shop fashion</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Sign in for the best experience</h5>
+            </div>
+            <div class="card-body">
+              <button class="btn btn-warning w-100">Sign in securely</button>
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg"
+                class="img-fluid mt-3 rounded" alt="Amazon Benefits">
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 5 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Deals & Promotions</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Deals_1x._SY304_CB430401028_.jpg"
+                class="img-fluid rounded" alt="Deals">
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">Shop all deals</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 6 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Health & Personal Care</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_BKGD_GW_379x304_1X_en_US._SY304_CB627424361_.jpg"
+                class="img-fluid rounded" alt="Health & Personal Care">
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">Shop now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 7 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Books</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Books_1X._SY304_CB639752818_.jpg"
+                class="img-fluid rounded" alt="Books">
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">Explore books</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category Card 8 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <div class="card-header bg-white">
+              <h5 class="card-title">Toys & Games</h5>
+            </div>
+            <div class="card-body">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg"
+                class="img-fluid rounded" alt="Toys & Games">
+            </div>
+            <div class="card-footer bg-white">
+              <a href="#" class="text-decoration-none">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <!-- Back to top button -->
+    <div class="bg-secondary text-center py-2">
+      <a href="#" class="text-white text-decoration-none">Back to top</a>
+    </div>
+
+    <!-- Main Footer -->
+    <div class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Column 1 -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="mb-3">Get to Know Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">About Amazon</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Investor Relations</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Amazon Devices</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="mb-3">Make Money with Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Sell products on Amazon</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Sell on Amazon Business</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Sell apps on Amazon</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Become an Affiliate</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Advertise Your Products</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="mb-3">Amazon Payment Products</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Amazon Business Card</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Shop with Points</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Reload Your Balance</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Amazon Currency Converter</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="mb-3">Let Us Help You</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Amazon and COVID-19</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Your Account</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Your Orders</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Shipping Rates & Policies</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Returns & Replacements</a></li>
+              <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Help</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-4">
+
+        <!-- Amazon Logo -->
+        <div class="text-center mb-4">
+          <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon" height="30">
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white-50">
+          <p>&copy; 1996-2025, Amazon.com, Inc. or its affiliates. All rights reserved.</p>
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="#" class="text-white-50 text-decoration-none">Conditions of Use</a>
+            <a href="#" class="text-white-50 text-decoration-none">Privacy Notice</a>
+            <a href="#" class="text-white-50 text-decoration-none">Interest-Based Ads</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript for smooth scrolling -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Navbar behavior on scroll
+      const navbar = document.querySelector('header');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          navbar.classList.add('navbar-scrolled');
+        } else {
+          navbar.classList.remove('navbar-scrolled');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
